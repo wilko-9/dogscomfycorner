@@ -41,6 +41,7 @@ main {
 }
 
 aside {
+    padding: 0px 10px;
     background-color: #434c5e;
     box-shadow: 0.5rem 1rem #2e3440;
     flex: 20;
@@ -48,6 +49,7 @@ aside {
 }
 
 section {
+    padding: 0px 10px;
     flex: 80;
     background-color: #434c5e;
     box-shadow: 0.5rem 1rem #2e3440;
