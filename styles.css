@@ -16,8 +16,7 @@ header {
     background-color: #434c5e;
     box-shadow: 0.5rem 1rem #2e3440;
     border: solid 2px #5e81ac;
-
-
+    padding: 0px 10px;
 }
 header .h1 {
         color: #eceff4;
