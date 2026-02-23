@@ -39,12 +39,18 @@ main {
     height: 60vh;
 }
 
+nav {
+        padding: 0px 10px;
+}
+
 aside {
-    padding: 0px 10px;
     background-color: #434c5e;
     box-shadow: 0.5rem 1rem #2e3440;
     flex: 20;
     border: solid 2px #5e81ac;
+}
+aside hr{
+    color: #5e81ac;
 }
 
 section {
@@ -82,9 +88,6 @@ section {
         box-shadow: 0.5rem 1rem #2e3440;
         overflow-y: scroll;
         flex: 80;
-    }
-    section h2{
-        text-align: center;
     }
 
     aside {
