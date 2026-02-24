@@ -3,7 +3,6 @@ body {
     margin: 0;
     background: #3b4252;
     color: #eceff4;
-
 }
 
 .top_section {
@@ -11,24 +10,34 @@ body {
 }
 
 header {
+    display: flex;
+    flex-direction: row;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    background: url("./Nova_woke_up_late-1.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
     background-color: #434c5e;
     box-shadow: 0.5rem 1rem #2e3440;
     border: solid 2px #5e81ac;
     padding: 0px 10px;
+    height: 17rem;
+    justify-content: flex-end;
 }
-header .h1 {
-        color: #eceff4;
-        text-align: left;
-    }
- 
+
+header h1 {
+    color: #eceff4;
+    padding-top: 10rem;
+    padding-right: 10rem;
+}
+
 .everything {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 80vh;
+    overflow-y: scroll;
 }
 
 main {
@@ -40,7 +49,7 @@ main {
 }
 
 nav {
-        padding: 0px 10px;
+    padding: 0px 10px;
 }
 
 aside {
@@ -49,57 +58,86 @@ aside {
     flex: 20;
     border: solid 2px #5e81ac;
 }
-aside hr{
+
+aside hr {
     color: #5e81ac;
 }
 
 section {
     padding: 0px 10px;
+}
+
+article {
     flex: 80;
     background-color: #434c5e;
     box-shadow: 0.5rem 1rem #2e3440;
     border: solid 2px #5e81ac;
+    overflow-y: scroll;
+
+}
+
+article hr {
+    color: #5e81ac;
 }
 
 @media (max-width: 768px) {
+    .everything {
+        height: 100%;
+    }
+
     .top_section {
         width: 90vw;
     }
+
     header {
-        margin-top: 1rem;
+        height: 4.2rem;
         background-color: #434c5e;
         box-shadow: 0.5rem 1rem #2e3440;
         text-align: center;
+        padding: 0;
     }
+
+    header h1 {
+        height: 1rem;
+        color: #eceff4;
+        font-size: 0.8rem;
+        padding: 2rem 1rem;
+    }
+
     main {
         display: flex;
         flex-direction: column;
         width: 90vw;
         justify-content: space-between;
-        height: 60rem;
+        height: 80rem;
         padding-bottom: 1rem;
 
     }
 
     section {
-        width: 81vw;
         padding: 1rem;
-        background-color: #434c5e;
-        box-shadow: 0.5rem 1rem #2e3440;
-        overflow-y: scroll;
+    }
+
+    article {
+        width: 90vw;
         flex: 80;
+        height: 100%;
+    }
+
+    nav {
+        padding: 1rem;
     }
 
     aside {
         margin: 1rem 0rem;
         background-color: #434c5e;
         box-shadow: 0.5rem 1rem #2e3440;
-        width: 81vw;
-        padding: 1rem;
+        width: 90vw;
         flex: 20;
         overflow-y: scroll;
     }
-    aside h2{
+
+    aside h2 {
         text-align: center;
     }
 
